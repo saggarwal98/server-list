@@ -30,7 +30,7 @@ app.post('/addtodo',(req,res)=>{
     todos.push(req.body['newtodo'])
     res.redirect('/')
 })
-const port=process.env.port||3333
-app.listen(port, () => console.log(`
+const PORT=process.env.port||3333
+app.listen(PORT, () => console.log(`
 Server started on http://localhost:${port}
 `))
